@@ -3,6 +3,7 @@
 * [Project Proposal](https://canvas.txstate.edu/courses/1993336/quizzes/6830611) 
 * [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554) 
 * [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566) 
+* [Dataset](https://www.kaggle.com/datasets/chandrimad31/phl-exoplanet-catalog) 
 
 
 # PROJECT FORMAT
@@ -22,46 +23,29 @@
 < Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
 * Give a clear and complete statement of the problem.
-* What is the benchmark you are using.  Why?  
-* Where does the data come from, what are its characteristics? Include informal success measures (e.g. accuracy on cross-validated data, without specifying ROC or precision/recall etc) that you planned to use. 
+    * Clear Complete Statement:
+* What is the benchmark you are using.  Why?
+    * Benchmark: 
+* Where does the data come from, what are its characteristics? Include informal success measures (e.g. accuracy on cross-validated data, without specifying ROC or precision/recall etc) that you planned to use.
+    * Data comes from:
 * What do you hope to achieve?>
+    * Hope to achieve: 
 
 <Expand and Complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
 ## Dataset 
-
-<Link for [Dataset](https://www.kaggle.com/datasets/chandrimad31/phl-exoplanet-catalog)>
     
 <Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
-* Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.  
+* Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.
+    * Description: Prior to preprocessing dataset, the dataframe size is (4048, 112). We narrowed down the dataset to only contain columns/variables that were relevant to our problem.
 * If you are using benchmarks, describe the data in details. If you are collecting data, describe why, how, data format, volume, labeling, etc.>
-* Description of the dataset: Prior to preprocessing dataset, the dataframe size is (4048, 112). We narrowed down the dataset to only contain columns/variables that were relevant to our problem.
-<Variables>
-    * S_DISTANCE                  0.051299
-    * S_HZ_CON0_MIN               0.051827
-    * S_HZ_CON1_MIN               0.051897
-    * S_HZ_CON_MIN                0.051900
-    * S_HZ_OPT_MIN                0.051901
-    * S_SNOW_LINE                 0.055036
-    * P_ECCENTRICITY_ERROR_MAX    0.074497
-    * P_RADIUS_EST                0.076826
-    * S_MASS                      0.083176
-    * S_TEMPERATURE               0.090243
-    * S_METALLICITY               0.092922
-    * S_AGE                       0.110499
-    * S_TIDAL_LOCK                0.136728
-    * P_TEMP_EQUIL_MIN            0.140296
-    * P_TEMP_EQUIL                0.141131
-    * P_TPERI                     0.141285
-    * P_TEMP_EQUIL_MAX            0.142674
-    * P_HABZONE_CON               0.298875
-    * P_ESI                       0.427036
-    * P_HABZONE_OPT               0.491481
-
+    * Benchmarks:
+    
 <Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
-* What Processing Tools have you used.  Why?  Add final images from jupyter notebook. Use questions from 3.4 of the [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) paper for a guide.>  
+* What Processing Tools have you used.  Why?  Add final images from jupyter notebook. Use questions from 3.4 of the [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) paper for a guide.>
+    * Processing Tools Used: 
 
 
 ## Exploratory Data Analysis 
