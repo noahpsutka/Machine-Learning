@@ -52,7 +52,22 @@
 <Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
 * Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.
+
     * Description: Prior to preprocessing dataset, the dataframe size is (4048, 112). We narrowed down the dataset to only contain columns/variables that were relevant to our problem.
+    
+    Some notable variables are:
+    
+    S_METALLICITY          abundance of elements present in the planet that are heavier than hydrogen and helium
+    S_AGE                  age of the planet 
+    S_TIDAL_LOCK           situation in which an astronomical object's orbital period matches its rotational period
+    P_TEMP_EQUIL_MIN       minimum temperature estimated in degrees Kelvin
+    P_TEMP_EQUIL           average temperature estimated in degrees Kelvin
+    P_TPERI            
+    P_TEMP_EQUIL_MAX       maximum temperature estimated in degrees Kelvin
+    P_HABZONE_CON          not in the habitable zone of a star ( binary classification )
+    P_ESI                  Earth Similarity Index, a measure of similarity to Earth's stellar flux, and mass or radius (Earth =                              1.0)
+    P_HABZONE_OPT          in the habitable zone of a star ( binary classification )
+    
 * If you are using benchmarks, describe the data in details. If you are collecting data, describe why, how, data format, volume, labeling, etc.>
     * Benchmarks:
     
@@ -67,7 +82,14 @@
 <Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
 * What EDA graphs you are planning to use? 
+    
+    We plan on using pairplots, histplots, confusion matrices, and heatmaps. Other EDA graphs will likely be very useful.
+    
 * Why? - Add figures if any
+    
+    Pairplots can help us visualize the correlation between each feature.
+    Histplots can give us a closer look at this data.
+    Confusion matrices can help us to evaluate a model.
 
 <Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
@@ -92,8 +114,13 @@
 <Complete [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
 * What is your baseline evaluation setup? Why? 
+    
+    We will test different models and log any improvement with each. We have already seen marked improvement by using different techniques, such as random oversampling.
+    
 * Describe the ML methods that you consider using and what is the reason for their choice? 
    * What is the family of machine learning algorithms you are using and why?
+    
+    We will be using classification algorithms, because our target is a binary classification. We plan on trying logistic regression, support vector machines, decision trees, and K-nearest neighbors algorithms.
 
 <Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
