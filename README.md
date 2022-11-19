@@ -18,22 +18,36 @@
 <Fully rewrite the summary as the last step for the [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
 
-## Problem Statement 
+## Problem Statement [Completed]
 
 < Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
 * Give a clear and complete statement of the problem.
-    * Clear Complete Statement:
+    * Problem Statement: We will be using a binary classification prediction model. The
+    class label we will be predict will be in regards to the habitability of a planet;
+    not-habitable = 0, habitable = 1
 * What is the benchmark you are using.  Why?
-    * Benchmark: 
+    * Typical algorithms used for binary classification are KNN, Logistic Regression,
+    SVM's and Decision Trees. These will be the benchmarks used to determine the output
+    class labels.
+    Imbalanced (Binary) Classification: Many of our data points for habitability belong
+    to the non-habitable label; Therefore we will be using cost-sensitive versions of
+    logistic regression, SVM's and Decision Trees.
 * Where does the data come from, what are its characteristics? Include informal success measures (e.g. accuracy on cross-validated data, without specifying ROC or precision/recall etc) that you planned to use.
-    * Data comes from:
+    * Data comes from kaggle, the link to the dataset is provide at top of this page.
+    Success measures will be Precision, Recall, and the F-Measure
+    Recall will be one of the most important measures for our model because we do not wish
+    to mislabel a habitable planet as inhabitable.
+    We will not be using "accuracy" as a performance metric as it can be misleading in
+    imbalanced binary tasks.
 * What do you hope to achieve?>
-    * Hope to achieve: 
+    * This project was created in hopes of creating a model that can predict what
+    features are the strongest predictors for a planet to be habitable. This information
+    can be used to narrow the search of stars for habitable planets.
 
 <Expand and Complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
-## Dataset 
+## Dataset [Work-in-Progress]
     
 <Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
