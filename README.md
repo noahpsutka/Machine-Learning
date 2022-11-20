@@ -8,8 +8,8 @@
 
 # PROJECT FORMAT
 
-#  <Title>
-**<All Authors>** 
+#  Predicting Habitability Using PHL Exoplanet Catalog
+**Benjamin Prentice, Noah Psutka** 
 
 ## Project Summary
 
@@ -55,21 +55,22 @@
 
     * Description: Prior to preprocessing dataset, the dataframe size is (4048, 112). We narrowed down the dataset to only contain columns/variables that were relevant to our problem.
     
-    Some notable variables are:
+    Some notable features are:
     
     S_METALLICITY          abundance of elements present in the planet that are heavier than hydrogen and helium
     S_AGE                  age of the planet 
     S_TIDAL_LOCK           situation in which an astronomical object's orbital period matches its rotational period
     P_TEMP_EQUIL_MIN       minimum temperature estimated in degrees Kelvin
     P_TEMP_EQUIL           average temperature estimated in degrees Kelvin
-    P_TPERI            
+    P_TPERI                time of passage at the periapse for eccentric orbits
     P_TEMP_EQUIL_MAX       maximum temperature estimated in degrees Kelvin
     P_HABZONE_CON          not in the habitable zone of a star ( binary classification )
-    P_ESI                  Earth Similarity Index, a measure of similarity to Earth's stellar flux, and mass or radius (Earth =                              1.0)
+    P_ESI                  Earth Similarity Index, a measure of similarity to Earth's stellar flux, and mass or radius (Earth=1.0)
     P_HABZONE_OPT          in the habitable zone of a star ( binary classification )
     
 * If you are using benchmarks, describe the data in details. If you are collecting data, describe why, how, data format, volume, labeling, etc.>
     * Benchmarks:
+    We are evaluating other published models to use as benchmarks. None has been chosen yet.
     
 <Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
@@ -83,13 +84,14 @@
 
 * What EDA graphs you are planning to use? 
     
-    We plan on using pairplots, histplots, confusion matrices, and heatmaps. Other EDA graphs will likely be very useful.
+    We plan on using pairplots, histograms, confusion matrices, and heatmaps. Other EDA graphs will likely be very useful.
     
 * Why? - Add figures if any
     
     Pairplots can help us visualize the correlation between each feature.
-    Histplots can give us a closer look at this data.
-    Confusion matrices can help us to evaluate a model.
+    Histograms can give us a closer look at this data.
+    Confusion matrices can help us to evaluate the accuracy of a model.
+    Heatmaps help us see correlation between features.
 
 <Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
