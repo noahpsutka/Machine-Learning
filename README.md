@@ -76,7 +76,12 @@
 
 * What Processing Tools have you used.  Why?  Add final images from jupyter notebook. Use questions from 3.4 of the [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) paper for a guide.>
     * Processing Tools Used: 
-
+    Scikit-Learn
+    Seaborn
+    Pandas
+    Numpy
+    Matplotlib
+    Imblearn
 
 ## Exploratory Data Analysis 
 
