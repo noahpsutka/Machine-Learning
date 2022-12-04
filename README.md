@@ -7,14 +7,14 @@
 
 ## Project Summary
 
+# ADD HERE
+
 <Complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566) assignment submission. See github.com repositories on how people shortblurb thre project e.g. REMOVE: It is a standalone section. It is written to give the reader a summary of your work. Be sure to specific, yet brief. Write this paragraph last (150-300 words)
 
 <Fully rewrite the summary as the last step for the [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
 
 ## Problem Statement [Completed]
-
-< Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
 * Give a clear and complete statement of the problem.
     * Problem Statement: We will be using a binary classification prediction model. The
@@ -39,47 +39,44 @@
     features are the strongest predictors for a planet to be habitable. This information
     can be used to narrow the search of stars for habitable planets.
 
-<Expand and Complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
-
 ## Dataset [Work-in-Progress]
     
-<Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
-
-* Description of the dataset (dimensions, names of variables with their description) If in doubt, use 3.1-3.3. [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) as a guideline.
-
-    * Description: Prior to preprocessing dataset, the dataframe size is (4048, 112). We narrowed down the dataset to only contain columns/variables that were relevant to our problem.
+* Description: Prior to preprocessing dataset, the dataframe size is (4048, 112). We narrowed down the dataset to only contain columns/variables that were relevant to our problem.
     
-    Some notable features are:
+    * Some notable features are:
     
-    S_METALLICITY          abundance of elements present in the planet that are heavier than hydrogen and helium
-    S_AGE                  age of the planet 
-    S_TIDAL_LOCK           situation in which an astronomical object's orbital period matches its rotational period
-    P_TEMP_EQUIL_MIN       minimum temperature estimated in degrees Kelvin
-    P_TEMP_EQUIL           average temperature estimated in degrees Kelvin
-    P_TPERI                time of passage at the periapse for eccentric orbits
-    P_TEMP_EQUIL_MAX       maximum temperature estimated in degrees Kelvin
-    P_HABZONE_CON          not in the habitable zone of a star ( binary classification )
-    P_ESI                  Earth Similarity Index, a measure of similarity to Earth's stellar flux, and mass or radius (Earth=1.0)
-    P_HABZONE_OPT          in the habitable zone of a star ( binary classification )
+     * S_METALLICITY - abundance of elements present in the planet that are heavier than hydrogen and helium
+     * S_AGE - age of the planet 
+     * S_TIDAL_LOCK - situation in which an astronomical object's orbital period matches its rotational period
+     * P_TEMP_EQUIL_MIN - minimum temperature estimated in degrees Kelvin
+     * P_TEMP_EQUIL - average temperature estimated in degrees Kelvin
+     * P_TPERI - time of passage at the periapse for eccentric orbits
+     * P_TEMP_EQUIL_MAX - maximum temperature estimated in degrees Kelvin
+     * P_HABZONE_CON - not in the habitable zone of a star ( binary classification )
+     * P_ESI - Earth Similarity Index, a measure of similarity to Earth's stellar flux, and mass or radius (Earth=1.0)
+     * P_HABZONE_OPT - in the habitable zone of a star ( binary classification )
     
 * If you are using benchmarks, describe the data in details. If you are collecting data, describe why, how, data format, volume, labeling, etc.>
     * Benchmarks:
-    We are evaluating other published models to use as benchmarks. None has been chosen yet.
+    We are evaluating other published models to use as benchmarks. None has been chosen yet. Another benchmark used was our intitial model.
     
-<Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
+# ADD HERE
 
 * What Processing Tools have you used.  Why?  Add final images from jupyter notebook. Use questions from 3.4 of the [Datasheets For Datasets](https://arxiv.org/abs/1803.09010) paper for a guide.>
     * Processing Tools Used: 
-    Scikit-Learn
-    Seaborn
-    Pandas
-    Numpy
-    Matplotlib
-    Imblearn
+    
+     * Scikit-Learn - cross_val_score, TSNE, PCA, StandardScaler, ConfusionMatrixDisplay, LabelEncoder, train_test_split
+    
+    ![image](heatmap.png)
+    ![image](confusionmatrix.png)
+     
+     * Seaborn - heatmap, pairplot, histplot, scatterplot
+     * Pandas - read_csv, dataframe
+     * Numpy
+     * Matplotlib - hist, plot formatting
+     * Imblearn - RandomOverSampler
 
 ## Exploratory Data Analysis 
-
-<Complete for [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
 * What EDA graphs you are planning to use? 
     
@@ -91,28 +88,31 @@
     Histograms can give us a closer look at this data.
     Confusion matrices can help us to evaluate the accuracy of a model.
     Heatmaps help us see correlation between features.
+    
+# ADD HERE
 
 <Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
 * Describe the methods you explored (usually algorithms, or data wrangling approaches). 
   * Include images. 
+  
 * Justify methods for feature normalization selection and the modeling approach you are planning to use. 
 
 ## Data Preprocessing 
 
-<Complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
-
+# MAYBE ADD MORE HERE
 
 * Have you considered Dimensionality Reduction or Scaling? 
-  * If yes, include steps here.  
+  * If yes, include steps here. 
+  
+  We used Standard Scaler to scale our dataset. We also eliminated features that had very high correlation with each other. 
+  
 * What did you consider but *not* use? Why? 
 
-<Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
+  We considered using Decision Trees but did not use them in the end. Our logistic regression and SVM models were sufficient. 
 
 
 ## Machine Learning Approaches
-
-<Complete [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554)>
 
 * What is your baseline evaluation setup? Why? 
     
@@ -122,18 +122,35 @@
    * What is the family of machine learning algorithms you are using and why?
     
     We will be using classification algorithms, because our target is a binary classification. We plan on trying logistic regression, support vector machines, decision trees, and K-nearest neighbors algorithms.
+    
+# ADD HERE
 
 <Expand and complete for [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
-* Describe the methods/datasets (you can have unscaled, selected, scaled version, multiple data farmes) that you ended up using for modeling. 
+* Describe the methods/datasets (you can have unscaled, selected, scaled version, multiple data frames) that you ended up using for modeling. 
+
+   We used the PHL Exoplanet Catalog. Features used are:  
+    
+   P_OMEGA_ERROR_MA, S_DISTANCE, S_SNOW_LINE, P_ECCENTRICITY_ERROR_MAX, P_RADIUS_EST, S_MASS, S_TEMPERATURE, S_METALLICITY, S_AGE,  S_TIDAL_LOCK, P_TEMP_EQUIL, P_TPERI, P_HABZONE_CON, P_ESI, P_HABZONE_OPT
+    
+   These features were scaled using Standard Scaler. 
 
 * Justify the selection of machine learning tools you have used
   * How they informed the next steps? 
+  
+  We used a correlation matrix to determine the features that were heavily correlated with each other. This allowed us to drop features that would have skewed the results. 
+  We used Label Encoder to determine if there was any correlation between habitability and the feature columns that contained objects.
+  We used a pairplot to visualize the relationship between features and habitability.
+  We used confusion matrices which led us to combine classes 1 & 2.
+
+# ADD HERE
 * Make sure to include at least twp models: (1) baseline model, and (2) improvement model(s).  
-   * The baseline model  is typically the simplest model that's applicable to that data problem, something we have learned in the class. 
+   * The baseline model is typically the simplest model that's applicable to that data problem, something we have learned in the class. 
    * Improvement model(s) are available on Kaggle challenge site, and you can research github.com and papers with code for approaches.  
 
 ## Experiments 
+
+# ADD HERE
 
 <Complete for the [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
@@ -148,6 +165,9 @@ This section should only contain final version of the experiments. Please use vi
   * Present error analysis and suggestions for future improvement. 
 
 ## Conclusion
+
+# ADD HERE
+
 <Complete for the [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566)>
 
 * What did not work? 
