@@ -117,10 +117,10 @@ can be used to narrow the search of stars for habitable planets.
   * We used a pairplot to visualize the relationship between features and habitability which gave us further confidence in our decisions.
   * We used confusion matrices which led us to combine classes 1 & 2.
 
-# MAYBE ADD MORE HERE
-* Make sure to include at least twp models: (1) baseline model, and (2) improvement model(s).  
+* Make sure to include at least two models: (1) baseline model, and (2) improvement model(s).  
    * The baseline model is typically the simplest model that's applicable to that data problem, something we have learned in the class. 
-   * Our baseline models use logistic regression and SVMs.
+   * Our baseline model were created using logistic regression or SVM ran on the base dataset. We selected the features to test on, 
+   and then ran the models on the data prior to preprocessing the features, then we ran the models again after processing the data
    * Improvement model(s) are available on Kaggle challenge site, and you can research github.com and papers with code for approaches.  
    * Improvement models could include XGBoost and machine learning methods for replacing null values.
 
@@ -130,9 +130,13 @@ can be used to narrow the search of stars for habitable planets.
 
 This section should only contain final version of the experiments. Please use visualizations whenever possible.
 * Describe how did you evaluate your solution 
-  * What evaluation metrics did you use? 
+  * What evaluation metrics did you use?
+  - We used a cross validation score to score the model. 
+    The main metric we used to determine if our model was working well was by watching for when the model would 
+    correctly label the labels of planet-habitablity as 1 or 2, a bad model would label everything as class label 0
 * Describe a baseline model. 
-  * How much did your model outperform the baseline?  
+  * How much did your model outperform the baseline?
+  Our models significantly outperformed the baseline models. Our early cross-validation scores were 0.6, but we were able to achieve 0.99
 * Were there other models evaluated on the same dataset(s)? 
   * How did your model do in comparison to theirs? 
   * Show graphs/tables with results 
@@ -144,7 +148,11 @@ This section should only contain final version of the experiments. Please use vi
 
 * What did not work? 
 * What do you think why? 
-* What were approaches, tuning model parameters you have tried? 
+    Scaling the data did not work to improve the model, the way we scored our model was not effected by this change, but
+    other metrics may be changed by processing the data with scaling
+* What were approaches, tuning model parameters you have tried?
+    We tried tuning the model to work with multiple class labels, or having them only deal with two class labels. The binary models
+    worked significantly better for our data
 * What features worked well and what didn't? 
 * When describing methods that didn't work, make clear how they failed and any evaluation metrics you used to decide so. 
 * How was that a data-driven decision? Be consise, all details can be left in .ipynb
