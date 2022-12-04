@@ -1,15 +1,9 @@
-# Project Assignments 
-
-* [Project Proposal](https://canvas.txstate.edu/courses/1993336/quizzes/6830611) 
-* [Project Progress](https://canvas.txstate.edu/courses/1993336/assignments/27480554) 
-* [Project Submission](https://canvas.txstate.edu/courses/1993336/assignments/27480566) 
-* [Dataset](https://www.kaggle.com/datasets/chandrimad31/phl-exoplanet-catalog) 
-
-
 # PROJECT FORMAT
 
 #  Predicting Habitability Using PHL Exoplanet Catalog
 **Benjamin Prentice, Noah Psutka** 
+
+* [Dataset](https://www.kaggle.com/datasets/chandrimad31/phl-exoplanet-catalog) 
 
 ## Project Summary
 
