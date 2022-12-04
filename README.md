@@ -102,14 +102,9 @@ can be used to narrow the search of stars for habitable planets.
 
 ## Machine Learning Approaches
 
-* What is your baseline evaluation setup? Why? 
+* We will test different models and log any improvement with each. We have already seen marked improvement by using different techniques, such as random oversampling.
     
-    We will test different models and log any improvement with each. We have already seen marked improvement by using different techniques, such as random oversampling.
-    
-* Describe the ML methods that you consider using and what is the reason for their choice? 
-   * What is the family of machine learning algorithms you are using and why?
-    
-    We will be using classification algorithms, because our target is a binary classification. We plan on trying logistic regression, support vector machines, decision trees, and K-nearest neighbors algorithms.
+* We will be using classification algorithms, because our target is a binary classification. We plan on trying logistic regression, support vector machines, decision trees, and K-nearest neighbors algorithms.
 
 * We used the PHL Exoplanet Catalog. Features used are:  
     
